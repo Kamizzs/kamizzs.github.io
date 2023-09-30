@@ -1,0 +1,164 @@
+@font-face {
+  font-family: 'playfair';
+  src: url('fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf') format('ttf');
+}
+
+body{
+   font-family: 'playfair';
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+    background-color: rgb(0, 0, 0);
+    background-image: 
+   linear-gradient(transparent 23px,
+    rgba(71, 71, 71, 0.8) 24px,
+    transparent 24px),
+   linear-gradient(90deg,
+    transparent 23px,
+    rgba(71, 71, 71, 0.8) 24px,
+    transparent 24px);
+  background-size: 100% 24px, 24px 100%;
+}
+
+header{
+  font-family: 'playfair';
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+header #navbarNav{
+  display: flex;
+  justify-content: center;
+}
+
+#navbarNav li{
+  margin-left: 3cm;
+  margin-right: 3cm;
+}
+
+img{
+  display: flex;
+  justify-content: center;
+}
+
+nav{
+  display: flex;
+  justify-content: center;
+}
+
+.banner{
+    position: absolute;
+    top:1px;
+    height: 30%;
+    width: 100%;
+    z-index: -1;
+   
+}
+
+#navbar{
+  background-color: rgba(11, 11, 11, 0);
+  z-index: 1;
+  font-size: large;
+}
+
+footer{
+  margin-top: 5%;
+  margin-bottom: 0px;
+  background-color: rgb(255, 255, 255,0.5);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 30px;
+}
+
+#bloc{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 5%;
+}
+
+.imgPix{
+  height: 15em;
+  border: 3px solid white;
+  border-radius: 1%;
+  margin: 2%;
+  text-align: center;
+}
+
+.imgPix:hover{
+  filter: blur(5px);
+  background-color: black;
+  cursor: grab;
+}
+
+.imgPix:active{
+  width: auto;
+  height: 400px;
+  filter: none;
+  background-color: rgba(255, 255, 255, 0);
+  cursor: grabbing;
+}
+
+a:active p{
+  display: none;
+}
+
+a:hover p{
+  visibility: visible !important;
+}
+
+a p{
+  visibility: hidden;
+  position: absolute;
+  color: white;
+  z-index: 10;
+  width: 15em;
+  text-align: center; 
+  top: 0;
+}
+
+.flag{
+  position: fixed;
+  bottom: 3em;
+  right: 2em;
+}
+
+.txtImg{
+  display: inline-flex;
+  position: relative;
+}
+
+h2{
+  margin-top: 8%;
+  text-align: center;
+  text-decoration: underline;
+}
+  
+  @media only screen and (max-width: 980px) {
+    img{
+      width: 100%;
+    } 
+  
+    .navbar-nav{
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      width: 100%;
+    }
+  
+    #navbarNav li{
+      margin: 0;
+    }
+    
+    h1{
+      font-size: 15px;
+    }
+  
+    .banner{
+      width: 2000px;
+    }   
+    
+    }
+
+

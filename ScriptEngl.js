@@ -1,7 +1,7 @@
 const text1_options = [
-    "Jeu de plateau fait en Java sur Netbeans",
-    "Première tentative d'anatomie en Pixel Art",
-    "Station météorologique faite en Java sur Netbeans",
+    "Board Game made with Java on Netbeans",
+    "First try of anatomy in Pixel Art",
+    "Weather Station made with Java on Netbeans",
   ];
   const color_options = ["#00000", "#FFFFF"];
 
@@ -45,7 +45,7 @@ const text1_options = [
           p.innerHTML = "PDF";
           break;
         case "contct":
-          p.innerHTML = "Jeux";
+          p.innerHTML = "Games";
           break;
       }
       this.append(p);
@@ -99,7 +99,3 @@ const text1_options = [
       carousel.classList.remove("anim-previous");
     }, 650);
   };
-
-
-  
-  

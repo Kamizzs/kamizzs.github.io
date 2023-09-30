@@ -1,23 +1,29 @@
+@font-face {
+  font-family: 'playfair';
+  src: url('fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf') format('ttf');
+}
+
 body{
+   font-family: 'playfair';
    display: flex;
    flex-direction: column;
    justify-content: center;
     background-color: rgb(0, 0, 0);
     background-image: 
-  linear-gradient(transparent 23px,
+   linear-gradient(transparent 23px,
     rgba(71, 71, 71, 0.8) 24px,
     transparent 24px),
-  linear-gradient(90deg,
+   linear-gradient(90deg,
     transparent 23px,
     rgba(71, 71, 71, 0.8) 24px,
     transparent 24px);
   background-size: 100% 24px, 24px 100%;
-  font-family:monospace;
 }
 
 header{
+  font-family: 'playfair';
   text-align: center;
-  background-color: rgba(255, 255, 255, 0.686);
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 header #navbarNav{
@@ -39,33 +45,32 @@ img{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 7%;
-  margin-right: 10px;
-
+  margin: 5%;
+  text-align: center;
 }
 
 #themsInfo{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 7%;
-  margin-right: 10px;
+  margin: 5%;
+  text-align: center;
 }
 
 #themsArt{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 7%;
-  margin-right: 10px;
+  margin: 5%;
+  text-align: center;
 }
 
 #themsJV{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 7%;
-  margin-right: 10px;
+  margin: 5%;
+  text-align: center;
 }
 
 nav{
@@ -101,23 +106,16 @@ nav{
 
 footer{
   margin-top: 5%;
-  background-color: rgb(255, 255, 255,0.6);
+  margin-bottom: 0px;
+  background-color: rgb(255, 255, 255,0.5);
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   padding: 30px;
 }
 
-
-
-#myCarousel{
-  margin-top: 10%;
-  display: flex;
-  justify-content: baseline;
-}
-
 .imgs{
-  background-color: rgba(255, 255, 255, 0.608);
+  background-color: rgba(255, 255, 255, 0.5);
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -126,31 +124,34 @@ footer{
   padding: 5%;
 }
 
+h2{
+  color: white;
+  text-align: center;
+  text-decoration: underline;
+  margin: 5%;
+}
 
-#bannerArt{
+#prem{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: 5%;
+}
+
+#bio{
+  width: 40em;
+  height: 25em;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  margin: 5%;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.flag{
   position: fixed;
-  top:1px;
-  width: 100%;
-  z-index: -1;
-  height: 100%;
-}
-
-.bloc1, .bloc3, .bloc5,.bloc7{
-  background-color: rgba(0, 0, 0, 0.567);
-  display: flex;
-  justify-content: start;
-  margin: 2%;
-}
-
-.bloc2, .bloc4, .bloc6,.bloc8{
-  background-color: rgba(0, 0, 0, 0.567);
-  display: flex;
-  justify-content: start;
-  margin: 2%;
-}
-
-h3{
-  margin: 10%;
+  bottom: 3em;
+  right: 2em;
 }
 
 #carousel-wrapper {
@@ -159,14 +160,14 @@ h3{
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: right;
   overflow: hidden;
-  margin: 10%;
+  margin: 5%;
 
 
   #menu {
-    height: 380px;
-    width: 720px;
+    height: 25em;
+    width: 40em;
     overflow: hidden;
     font-weight: 700;
     line-height: 1;
@@ -186,7 +187,7 @@ h3{
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      background-color: rgba(255, 255, 255, 0.663);
+      background-color: rgba(255, 255, 255, 0.5);
       overflow: hidden;
 
       #current-option-text1 {
@@ -223,44 +224,6 @@ h3{
           flex-direction: column;
           align-items: center;
           justify-content: flex-start;
-          background: rgba(255, 255, 255, 0.755);
-        }
-      }
-
-      #current-option-text2 {
-        font-size: 0.8rem;
-        width: 220px;
-        height: 40px;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: flex-end;
-        background: rgba(255, 255, 255, 0.76);
-
-        &::before {
-          content: attr(data-next-text);
-          position: absolute;
-          transform: translate(0%, 380px);
-          width: 100%;
-          height: 40px;
-          display: flex;
-          flex-direction: column;
-          align-items: flex-start;
-          justify-content: flex-end;
-         background: rgba(255, 255, 255, 0.795);
-        }
-
-        &::after {
-          content: attr(data-previous-text);
-          position: absolute;
-          transform: translate(0%, -380px);
-          width: 100%;
-          height: 40px;
-          display: flex;
-          flex-direction: column;
-          align-items: flex-start;
-          justify-content: flex-end;
-          background: rgb(255, 255, 255);
         }
       }
     }
@@ -299,16 +262,13 @@ h3{
     z-index: 101;
     position: absolute;
     transform: translate(140px, 0);
+    right: 15em;
   }
 
   &.anim-next {
     pointer-events: none;
 
     #current-option-text1 {
-      animation: next-text 0.65s 0.085s;
-    }
-
-    #current-option-text2 {
       animation: next-text 0.65s 0.085s;
     }
 
@@ -329,10 +289,6 @@ h3{
     pointer-events: none;
 
     #current-option-text1 {
-      animation: previous-text 0.65s 0.085s;
-    }
-
-    #current-option-text2 {
       animation: previous-text 0.65s 0.085s;
     }
 
@@ -426,21 +382,28 @@ h3{
 
 @media only screen and (max-width: 980px) {
   img{
-    width: 48px;
-    height: 48px;
+    width: 45%;
   }
 
-
+  #bio{
+    height: 27em;
+  }
 
   .navbar-nav{
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 100%;
+    height: 3em;
   }
 
   #navbarNav li{
     margin: 0;
+  }
+
+  .btn-secondary{
+    width: 150px;
+    padding: 5%;
   }
   
   h1{
@@ -448,7 +411,7 @@ h3{
   }
 
   .banner{
-    width: 2000px;
+    visibility: hidden;
   }
 
   .thems{
@@ -460,50 +423,20 @@ h3{
     flex-wrap: wrap;
   }
 
+  ul.navbar-nav img{
+    width: 100%;
+  }
+
+  .icone{
+    width: 100%;
+  }
+
   #carousel-wrapper{
     display: none !important;
   }
+  }
+
   
-  .bloc1 img{
-    width: 200px;
-    height: 300px;
-  }
-
-  .bloc2 img{
-    width: 300px;
-    height: 300px;
-  }
-
-  .bloc3 img{
-    width: 400px;
-    height: 300px;
-  }
-
-  .bloc4 img{
-    width: 400px;
-    height: 300px;
-  }
-
-  .bloc5 img{
-    width: 400px;
-    height: 300px;
-  }
-
-  .bloc6 img{
-    width: 400px;
-    height: 300px;
-  }
-
-  .bloc7 img{
-    width: 400px;
-    height: 300px;
-  }
-
-  .bloc8 img{
-    width: 400px;
-    height: 300px;
-  }
-  }
 
 
 
